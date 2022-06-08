@@ -1,12 +1,7 @@
 "use strict";
 function validBraces(braces) {
-    const regex = /\(\)|\[\]|\{\}/;
-    // let temp = '';
-    // while (regex.test(braces)) {
-    //     temp += braces.match(regex);
-    // }
+    const regex = /\(\)|\[\]|\{\}/g;
     while (regex.test(braces)) {
-        console.log(braces);
         braces = braces.replace(regex, '');
     }
     return braces.length == 0;

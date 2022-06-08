@@ -1,6 +1,6 @@
 "use strict";
 function countBits(n) {
-    if (n > 0 && n % 1 == 0) {
+    if (n % 1 == 0) {
         let temp = n.toString(2).split("");
         let res = 0;
         temp.map((item) => {
@@ -13,3 +13,5 @@ function countBits(n) {
     return 0;
 }
 console.log(countBits(1234.12));
+console.log(countBits(1234));
+console.log(countBits(-1234));
